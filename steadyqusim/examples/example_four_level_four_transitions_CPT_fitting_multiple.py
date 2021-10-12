@@ -148,7 +148,7 @@ powers = [1250, 5000, 20000, 40000]
 data_frames = []
 heights = []
 for power in powers:
-    packaged_data = pkgutil.get_data('steadyqusim.examples.data', f'CPT_{int(power)}.0.csv')
+    packaged_data = pkgutil.get_data('steadyqusim', f'examples/data/CPT_{int(power)}.0.csv')
     dataframe = pd.read_csv(io.BytesIO(packaged_data))
     data_frames.append(dataframe)
     data_frames[-1]['power'] = power
