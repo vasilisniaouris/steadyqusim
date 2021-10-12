@@ -1,7 +1,7 @@
 import numpy as np
 from scipy import constants
 
-from compounted_library.steady_state_quantum_system_solver import smart_frequency_range_choice_around_resonances
+from steadyqusim.steady_state_quantum_system_solver import smart_frequency_range_choice_around_resonances
 # defining conversion factors and constants
 ev_to_ghz = 241799.0504
 J_to_ev = 1/constants.value('electron volt')
